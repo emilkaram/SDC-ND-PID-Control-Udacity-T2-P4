@@ -1,6 +1,6 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
-
+![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/1.png)
 ---
 
 ## Dependencies
