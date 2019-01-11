@@ -64,7 +64,7 @@ when I increased kp without considering Ki and kd the car start to oscilate and 
 
 I: 
 The integral is the sums of errors over time, if small error will accmulate and cause the integral component to increase over time.
-The integral response will continually increase over time unless the error is zero, so the effect is to drive the Steady-State error to zero.
+The integral response will continually increase over time unless the error is zero, so the effect is to drive the steady state error to zero.
 
 [video link to I gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/I.mp4)
 
@@ -81,7 +81,8 @@ The derivative looks at the rate of change of the error and adjusts the control 
 ![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/2.png)
 
 I tunned the hyperparmeters manulay and the final values are (Kp = 0.2 , Ki= 0.0002 , Kd = 3.2)to control the steering angle
-and for the I used throttle = 0.4- fabs(steer_value * 0.5) to control the speed.
+and for the speed I used:
+throttle = 0.4- fabs(steer_value * 0.5) to control the speed.
 
 
 [video link to PID](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/Pid.mp4)
