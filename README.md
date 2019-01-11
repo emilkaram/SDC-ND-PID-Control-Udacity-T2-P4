@@ -65,16 +65,13 @@ when I increased kp without considering Ki and kd the car start to oscilate and 
 I: 
 The integral is the sums of errors over time, if small error will accmulate and cause the integral component to increase over time.
 The integral response will continually increase over time unless the error is zero, so the effect is to drive the Steady-State error to zero.
-Steady-State error is the final difference between the process variable and refrnece point. 
-
-When I implemented the Ki 
 
 [video link to I gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/I.mp4)
 
 
 
 D:
-The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Increasing the derivative time (Td) parameter will cause the control system to react more strongly to changes in the error term and will increase the speed of the overall control system response. Most practical control systems use very small derivative time (Td), because the Derivative Response is highly sensitive to noise in the process variable signal. If the sensor feedback signal is noisy or if the control loop rate is too slow, the derivative response can make the control system unstable
+The derivative looks at the rate of change of the error and adjusts the control output based on that rate. 
 
 [video link to D gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/D.mp4)
 
