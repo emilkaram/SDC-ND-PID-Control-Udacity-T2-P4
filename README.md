@@ -2,6 +2,15 @@
 Self-Driving Car Engineer Nanodegree Program
 ![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/1.png)
 ---
+## Project Introduction
+In this project I implemented a PID controller in C++ to maneuver the vehicle around the track of the simulator
+
+The simulator provided the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle.
+
+steering angle calaulated by PID control equation:
+- Kp * p_error - Kd * d_error - Ki * i_error;
+where Kp , Kd and Ki are the gains.
+
 
 ## Dependencies
 
