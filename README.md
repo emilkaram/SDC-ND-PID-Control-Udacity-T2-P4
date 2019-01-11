@@ -47,9 +47,8 @@ Fellow students have put together a guide to Windows set-up for the project [her
 
  
 # Reflection:
-![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/3.png)
 
-P:The proportional is the difference between the refrence point and the current value. 
+P:The proportional (The current) is the difference between the refrence point and the current value. 
 This difference is referred to as CTE(Cross Track Error) . 
 The proportional gain (Kp) determines the ratio of controller response to the CTE. 
 Increasing the proportional gain will increase the reaction of the control system response.
@@ -59,24 +58,34 @@ when I increased kp without considering Ki and kd the car start to oscilate and 
 video link to P gain only:
 https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/P.mp4
 
+![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/3.png)
 
-I: The integral is the sums of errors over time.So if small error will accmulate and cause the integral component to increase slowly.
+
+I: The integral (the past) is the sums of errors over time.So if small error will accmulate and cause the integral component to increase slowly.
 The integral response will continually increase over time unless the error is zero, so the effect is to drive the Steady-State error to zero. Steady-State error is the final difference between the process variable and set point. A phenomenon called integral windup results when integral action saturates a controller without the controller driving the error signal toward zero.
+
 video link to I gain only:
+
 https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/I.mp4
 
 
 
-D:The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Increasing the derivative parameter will cause the control system to react more strongly to changes in the error term and will increase the speed of the overall control system response. Most practical control systems use very small derivative parameter, because the Derivative Response is highly sensitive to noise in the process variable signal. If the sensor feedback signal is noisy or if the control loop rate is too slow, the derivative response can make the control system unstable
+D:The derivative is to the rate of change of the process variable. Increasing the derivative parameter will cause the control system to react more strongly to changes in the error term and will increase the speed of the overall control system response. Most practical control systems use very small derivative parameter, because the Derivative Response is highly sensitive to noise in the process variable signal. If the sensor feedback signal is noisy or if the control loop rate is too slow, the derivative response can make the control system unstable
+
 video link to D gain only:
+
 https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/D.mp4
 
 
-
+PID:
 ![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/2.png)
+
+I tunned the hyperparmeters manulay and the final values are (Kp = 0.2 , Ki= 0.0002 , Kd = 3.2)to control the steering angle
+and for the I used throttle = 0.4- fabs(steer_value * 0.5) to control the speed.
 
 
 video link to PID:
+
 https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/Pid.mp4
 
 
