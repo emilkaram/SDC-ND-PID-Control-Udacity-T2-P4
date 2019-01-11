@@ -47,6 +47,7 @@ Fellow students have put together a guide to Windows set-up for the project [her
 
  
  #Reflection:
+ 
 ![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/3.png)
 P:The proportional is the difference between the refrence point and the current value. 
 This difference is referred to as CTE(Cross Track Error) . 
