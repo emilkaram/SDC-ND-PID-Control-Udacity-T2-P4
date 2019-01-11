@@ -55,8 +55,8 @@ Increasing the proportional gain will increase the reaction of the control syste
 However, if the proportional gain is too large, the system will begin to overshoot.
 If Kp is increased further, the overshoot will increase and the system will oscillate and become unstable.
 when I increased kp without considering Ki and kd the car start to oscilate and become out of contol
-video link to P gain only:
-https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/P.mp4
+
+[video link to P gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/P.mp4)
 
 ![](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/img/3.png)
 
@@ -64,17 +64,13 @@ https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/result
 I: The integral (the past) is the sums of errors over time.So if small error will accmulate and cause the integral component to increase slowly.
 The integral response will continually increase over time unless the error is zero, so the effect is to drive the Steady-State error to zero. Steady-State error is the final difference between the process variable and set point. A phenomenon called integral windup results when integral action saturates a controller without the controller driving the error signal toward zero.
 
-video link to I gain only:
-
-https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/I.mp4
+[video link to I gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/I.mp4)
 
 
 
 D:The derivative is to the rate of change of the process variable. Increasing the derivative parameter will cause the control system to react more strongly to changes in the error term and will increase the speed of the overall control system response. Most practical control systems use very small derivative parameter, because the Derivative Response is highly sensitive to noise in the process variable signal. If the sensor feedback signal is noisy or if the control loop rate is too slow, the derivative response can make the control system unstable
 
-video link to D gain only:
-
-https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/D.mp4
+[video link to D gain only](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/D.mp4)
 
 
 PID:
@@ -84,9 +80,7 @@ I tunned the hyperparmeters manulay and the final values are (Kp = 0.2 , Ki= 0.0
 and for the I used throttle = 0.4- fabs(steer_value * 0.5) to control the speed.
 
 
-video link to PID:
-
-https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/Pid.mp4
+[video link to PID](https://github.com/emilkaram/SDC-ND-PID-Control-Udacity-T2-P4/blob/master/results/Pid.mp4)
 
 
 # Conclusion:
